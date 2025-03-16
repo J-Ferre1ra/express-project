@@ -1,0 +1,15 @@
+{
+  "name": "express-project",
+  "version": "1.0.0",
+  "description": "Projeto que mostra exercícios para praticar APIs e funções do express.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Henrique Ferreira Constantino da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
