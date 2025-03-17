@@ -112,6 +112,11 @@ http://localhost:3000/hello
 - [x] 6. Criar um script que lê um arquivo JSON, altera um valor e salva novamente
  Comando para testar:
    Execute o script diretamente no terminal (certifique-se de que o arquivo processBrands.js está configurado corretamente):
+No seguinte caminho entre na pasta data: \Github\express-project>
+````
+ cd data
+````
+Em seguida:
 ````bash
 node processBrands.js
 ````
