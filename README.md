@@ -80,12 +80,12 @@ http://localhost:3000/products
  Comando para testar:
    Acesse a URL no navegador:
 ````bash
-http://localhost:3000/rota-inexistente
+http://localhost:3000/products/5
 ````
  **Resposta esperada:** 
  ````json
 {
-  "error": "Página não encontrada"
+  "error": "Produto nao encontrado"
 }
 
 ````
