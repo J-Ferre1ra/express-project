@@ -15,8 +15,12 @@ app.use('/ping', pingRouter)
 const productsRouter = require('./routes/products.router')
 app.use('/products', productsRouter)
 
+const helloRouter = require('./routes/hello.router')
+app.use('/hello', helloRouter)
+
 const middlewareRouter = require('./middlewares/errorMiddleware')
 app.use(middlewareRouter)
+
 
 app.listen(port, ()=> console.log(`Server is running in port ${port}`)
 )
