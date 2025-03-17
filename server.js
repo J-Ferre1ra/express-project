@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
 
+require('dotenv').config()
+const port = process.env.PORT || 3000
+const apiUrl = process.env.API_URL || `http://localhost:${port}`
+
 app.get('/', (req, res)=>{
     res.send('Testando...')
 })
@@ -14,5 +18,5 @@ app.use('/products', productsRouter)
 const middlewareRouter = require('./middlewares/errorMiddleware')
 app.use(middlewareRouter)
 
-app.listen(3000, ()=> console.log('Server is running in port 3000')
+app.listen(port, ()=> console.log(`Server is running in port ${port}`)
 )
