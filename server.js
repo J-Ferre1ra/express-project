@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 
 require('dotenv').config()
@@ -7,6 +8,11 @@ const apiUrl = process.env.API_URL || `http://localhost:${port}`
 
 app.get('/', (req, res)=>{
     res.send('Testando...')
+})
+
+app.use(express.static(path.join(__dirname, 'public-server-http')))
+app.get('/projeto', (req, res)=>{
+    res.sendFile(path.join(__dirname, 'public-server-http' ,'index.html'))
 })
 
 const pingRouter = require('./routes/ping.router')
