@@ -109,7 +109,16 @@ http://localhost:3000/hello
 { "message": "Hello World" }
 ````
 
-- [x] 6. Criar um script que lê um arquivo JSON, altera um valor e salva novamente
+
+ - [x] 6. Criar um servidor HTTP que serve arquivos HTML, CSS e JS
+ Comando para testar:
+   Acesse a URL no navegador:
+````bash
+http://localhost:3000/projeto
+````
+ **O servidor irá servir o arquivo index.html com seus respectivos arquivos de estilo (CSS) e scripts (JS).** 
+
+- [x] 7. Criar um script que lê um arquivo JSON, altera um valor e salva novamente
  Comando para testar:
    Execute o script diretamente no terminal (certifique-se de que o arquivo processBrands.js está configurado corretamente):
 No seguinte caminho entre na pasta data: \Github\express-project>
@@ -122,12 +131,4 @@ node processBrands.js
 ````
  **O script irá ler o arquivo brandsCar.json, alterá-lo e salvar novamente.**  
 
- - [x] 7. Criar um servidor HTTP que serve arquivos HTML, CSS e JS
- Comando para testar:
-   Acesse a URL no navegador:
-````bash
-http://localhost:3000/projeto
-````
- **O servidor irá servir o arquivo index.html com seus respectivos arquivos de estilo (CSS) e scripts (JS).** 
-
- 
+--
